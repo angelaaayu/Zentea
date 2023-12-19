@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=">Zen Tea Garden">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>About Zen Tea Garden</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+
+            <h1>ZEN TEA GARDEN</h1>
+    
+            <nav>
+                <ol>
+                    <li>    
+                        <a class="burgericon" onclick="openSideMenu()" href="#">
+                            <svg viewBox="0 0 100 80" width="40" height="40">
+                                <rect width="100" height="20" ></rect>
+                                <rect y="30" width="100" height="20"></rect>
+                                <rect y="60" width="100" height="20"></rect>
+                            </svg>
+                        </a>
+                    </li>
+                    <div class="nav-top">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </div>
+                </ol>
+            </nav>
+        </header>
+        
+        <div class="nav-burger-side" id="side-nav-bar">
+            <ol>
+                <li><a href="#" onclick="closeSideMenu()">&times;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li>
+                    <img src="img/footer/facebook_icon.svg" alt="Facebook">
+                    <img src="img/footer/instagram_icon.svg" alt="Instagram">
+                    <img src="img/footer/youtube_icon.svg" alt="YouTube">
+                    <img src="img/footer/twitter_icon.svg" alt="Twitter">
+                </li>
+            </ol>
+        </div>
+
+    <div class="about-hero">
+
+        <h3>ABOUT US</h3>
+
+        <p>At Zen Tea Garden, we're more than just purveyors of fine teas – we're enthusiasts, connoisseurs, and storytellers woven into the rich tapestry of tea culture. Our journey began with a passion for the art of steeping, and today, we invite you to join us on a sensory expedition that celebrates tradition, innovation, and the heartwarming moments that a cup of tea can bring.</p>
+
+    </div>
+
+    <div class="aboutus">
+
+        <div class="aboutus-grid">
+
+            <div>
+                <img src="img/About/leaf.svg" alt="Global Quest for Excellence in Zen Tea Garden">
+                <h3>A Global Quest for Excellence</h3>
+                <p>Driven by a deep love for the leaf, we've curated a selection that honors the diversity of flavors and the heritage behind each brew. Our team scours the globe to source the finest leaves, connecting with tea gardens that share our commitment to quality and sustainability. From lush plantations nestled in misty mountains to ancient estates steeped in history, our partnerships with growers ensure that every leaf that finds its way into your cup is a testament to generations of expertise.</p>
+            </div>
+
+            <div>
+                <img src="img/About/leaves.svg" alt="Unfolding Tales with Every Sip in Zen Tea Garden">
+                <h3>Unfolding Tales with Every Sip</h3>
+                <p>But our journey isn't just about sourcing teas; it's about the stories that unfurl with every sip. Whether you're captivated by the soothing notes of a chamomile infusion or embarking on an exploration of rare oolongs, we're here to guide you through the nuances and revelations of each blend. From the novice to the aficionado, our mission is to make the world of tea accessible, engaging, and deeply rewarding.</p>
+            </div>
+
+            <div>
+                <img src="img/About/kettle.svg" alt="A Journey Beyond Taste in Zen Tea Garden">
+                <h3>A Journey Beyond Taste</h3>
+                <p>As you browse through our offerings, you're not just selecting a tea; you're embracing a legacy, a culture, and a journey that transcends borders. From the time-honored rituals of ancient civilizations to the modern alchemy of tea blending, we're here to share our passion and expertise, ensuring that every cup you brew is an experience worth savoring.</p>
+
+            </div>
+        </div>
+            
+    </div>
+
+
+    <footer>
+
+        <div class="footer-flex">
+
+            <div>
+                <h5>CONNECT WITH US</h5>
+                <p><img src="img/footer/facebook_icon.svg" alt="">Facebook</p>
+                <p><img src="img/footer/instagram_icon.svg" alt="">Instagram</p>
+                <p><img src="img/footer/youtube_icon.svg" alt="">YouTube</p>
+                <p><img src="img/footer/twitter_icon.svg" alt="">Twitter</p>
+            </div>
+
+            <div>
+
+                <fieldset>
+
+                    <h5>ENQUIRY</h5>
+                    <p>Contact us for more information about our tea products.</p>
+                    
+        
+                    <label for="Name">Name</label>
+                    <br>
+                    <input type="text" name="name" id="name">
+        
+                    <br>
+                        
+        
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email">
+        
+                    <br>
+        
+                    <label for="subject">Subject</label>
+                    <br>
+                    <input type="text" name="subject" id="subject">
+        
+                    <br>
+        
+                    <label for="msg">Message</label>
+                    <br>
+                    <textarea name="msg" id="msg"></textarea>
+        
+                    <br>
+        
+                    <button >Submit</button>
+        
+                </fieldset>
+
+            </div>
+
+
+        </div>
+
+        <p>&copy; 2023 Zen Tea Garden.</p>
+    </footer>
+
+    </div>
+
+    <script>
+
+        //open the menu 
+        function openSideMenu() {
+            document.getElementById('side-nav-bar').style.width = '100%';
+        }
+    
+        //Close the menn
+        function closeSideMenu(){
+            document.getElementById('side-nav-bar').style.width = '0px';
+        }
+    </script>
+
+</body>
+</html>

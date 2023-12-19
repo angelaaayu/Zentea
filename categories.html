@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=">Zen Tea Garden">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+  
+    <title>Categories of Teas</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+
+            <h1>ZEN TEA GARDEN</h1>
+    
+            <nav>
+                <ol>
+                    <li>    
+                        <a class="burgericon" onclick="openSideMenu()" href="#">
+                            <svg viewBox="0 0 100 80" width="40" height="40">
+                                <rect width="100" height="20" ></rect>
+                                <rect y="30" width="100" height="20"></rect>
+                                <rect y="60" width="100" height="20"></rect>
+                            </svg>
+                        </a>
+                    </li>
+                    <div class="nav-top">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </div>
+                </ol>
+            </nav>
+        </header>
+        
+        <div class="nav-burger-side" id="side-nav-bar">
+            <ol>
+                <li><a href="#" onclick="closeSideMenu()">&times;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li>
+                    <img src="img/footer/facebook_icon.svg" alt="Facebook">
+                    <img src="img/footer/instagram_icon.svg" alt="Instagram">
+                    <img src="img/footer/youtube_icon.svg" alt="YouTube">
+                    <img src="img/footer/twitter_icon.svg" alt="Twitter">
+                </li>
+            </ol>
+        </div>
+
+    <div class="categories-hero">
+
+        <h3>CATEGORIES</h3>
+
+    </div>
+
+    <div class="blacktea-image">
+
+        <h3>Black Tea</h3>
+        <button><a href="#contactus">Contact Us</a></button>
+
+    </div>
+
+    <div class="white-image">
+
+        <h3>White Tea</h3>
+        <button><a href="#contactus">Contact Us</a></button>
+        
+    </div>
+
+
+    <div class="tea-comparison">
+
+        <h1>TEA VARIETIES COMPARISON</h1>
+        <p>Explore the unique characteristics of our exquisite tea varieties through our comprehensive Tea Varieties Comparison. Delve into the distinct flavors, processing methods, health benefits, and more, as we help you navigate the world of teas to find your perfect cup.</p>
+
+        <table>
+ 
+            <tr>
+                <th class="legend"></th>
+                <th><img src="img/Categories/tealeaf.svg">Black Tea</th>
+                <th><img src="img/Categories/tealeaf.svg">White Tea</th>
+            </tr>
+            
+            <tr>
+                <td class="legend"><h5>Processing</h5></td>
+                <td class="test">Fully oxidized leaves</td>
+                <td>Minimal oxidation of young leaves</td>
+            </tr>
+            
+            <tr>
+                <td class="legend"><h5>Flavor</h5></td>
+                <td>Bold, robust, sometimes astringent</td>
+                <td>Delicate, subtle, with sweet and floral notes</td>
+            </tr>
+            
+            <tr>
+                <td class="legend"><h5>Health Benefits</h5></td>
+                <td>Heart health, energy boost</td>
+                <td>High antioxidants, skin health, relaxation</td>
+            </tr>
+            
+            <tr>
+                <td class="legend"><h5>Brew Time</h5></td>
+                <td>Longer steeping time, higher temperatures</td>
+                <td>Shorter steeping time, lower temperatures</td>
+            </tr>
+            
+            <tr>
+                <td class="legend"><h5>Aroma</h5></td>
+                <td>Bold and aromatic</td>
+                <td>Subtle and fragrant</td>
+            </tr>
+
+            <tr>
+                <td class="legend"></td>
+                <td colspan="2"><button><a href="#contactus">Contact Us</a></button></td>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <footer>
+
+        <div id="contactus" class="footer-flex">
+
+            <div>
+                <h5>CONNECT WITH US</h5>
+                <p><img src="img/footer/facebook_icon.svg" alt="">Facebook</p>
+                <p><img src="img/footer/instagram_icon.svg" alt="">Instagram</p>
+                <p><img src="img/footer/youtube_icon.svg" alt="">YouTube</p>
+                <p><img src="img/footer/twitter_icon.svg" alt="">Twitter</p>
+            </div>
+
+            <div>
+
+                <fieldset>
+
+                    <h5>ENQUIRY</h5>
+                    <p>Contact us for more information about our tea products.</p>
+                    
+        
+                    <label for="Name">Name</label>
+                    <br>
+                    <input type="text" name="name" id="name">
+        
+                    <br>
+                        
+        
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email">
+        
+                    <br>
+        
+                    <label for="subject">Subject</label>
+                    <br>
+                    <input type="text" name="subject" id="subject">
+        
+                    <br>
+        
+                    <label for="msg">Message</label>
+                    <br>
+                    <textarea name="msg" id="msg"></textarea>
+        
+                    <br>
+        
+                    <button >Submit</button>
+        
+                </fieldset>
+
+            </div>
+
+
+        </div>
+
+        <p>&copy; 2023 Zen Tea Garden.</p>
+    </footer>
+
+    </div>
+
+    </div>
+
+
+
+    <script>
+
+        //open the menu 
+        function openSideMenu() {
+            document.getElementById('side-nav-bar').style.width = '100%';
+        }
+    
+        //Close the menu
+        function closeSideMenu(){
+            document.getElementById('side-nav-bar').style.width = '0px';
+        }
+
+    </script>
+
+</body>
+</html>
